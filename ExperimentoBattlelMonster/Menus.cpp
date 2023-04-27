@@ -77,7 +77,6 @@ void Menus::mainTutorial() {
 	}
 	bool init = false;
 	SoundManager snd;
-	snd.getMusic(L"Sounds\\Music-Battle Music.wav");
 
 			gotoxy(28, 5);	std::cout << "                                                          #### #### #  # #### #### #### #    ####                                                          " << std::endl;
 			gotoxy(28, 6);	std::cout << "                                                          #    #  # ## #  ##  #  # #  # #    #                                                             " << std::endl;
@@ -140,11 +139,11 @@ void Menus::mainTutorial() {
 				gotoxy(60, 34);		std::cout << "   #    # #  #       #    #   #  #    ##  #  #   #    #  # #  #  ##  ## #  # #  # #   " << std::endl;
 				gotoxy(60, 35);		std::cout << "   #    #  # #### #### ####   #  #    ##  ####   #### #### #     ##  ## #    #### ####" << std::endl;	Sleep(400);
 					   
-				gotoxy(60, 31);		std::cout << "                                                                                     " << std::endl;
-				gotoxy(60, 32);		std::cout << "                                                                                     " << std::endl;
-				gotoxy(60, 33);		std::cout << "                                                                                     " << std::endl;
-				gotoxy(60, 34);		std::cout << "                                                                                     " << std::endl;
-				gotoxy(60, 35);		std::cout << "                                                                                     " << std::endl;	Sleep(400);
+				gotoxy(60, 31);		std::cout << "                                                                                       " << std::endl;
+				gotoxy(60, 32);		std::cout << "                                                                                       " << std::endl;
+				gotoxy(60, 33);		std::cout << "                                                                                       " << std::endl;
+				gotoxy(60, 34);		std::cout << "                                                                                       " << std::endl;
+				gotoxy(60, 35);		std::cout << "                                                                                       " << std::endl;	Sleep(400);
 
 				if (_kbhit()) {
 					char tecla = _getch();
@@ -741,6 +740,10 @@ void Menus::mainPause() {
 }
 
 void Menus::gameOver() {
+	
+	SoundManager snd;
+	snd.getMusic(L"Sounds\\Music-GameOver.wav");
+
 	gotoxy(40, 5);	std::cout << "                                ###########      ##########     ##        ##    ############                                " << std::endl;	Sleep(200);
 	gotoxy(40, 6);  std::cout << "                                ############    ############    ###      ###    ############                                " << std::endl;   Sleep(200);
 	gotoxy(40, 7);  std::cout << "                                ##        ##    ##        ##    ####    ####    ##                                          " << std::endl;   Sleep(200);
