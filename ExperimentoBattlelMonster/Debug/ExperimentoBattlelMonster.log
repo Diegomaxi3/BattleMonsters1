@@ -1,0 +1,4 @@
+﻿  GameManager.cpp
+D:\Users\marky\Desktop\Juegos C++\battlemonster-main\ExperimentoBattlelMonster\GameManager.cpp(170,29): warning C4244: 'inicializando': conversión de 'double' a 'int'; posible pérdida de datos
+D:\Users\marky\Desktop\Juegos C++\battlemonster-main\ExperimentoBattlelMonster\GameManager.cpp(99): warning C4715: 'GameManager::selector': no todas las rutas de acceso de control devuelven un valor
+  ExperimentoBattlelMonster.vcxproj -> D:\Users\marky\Desktop\Juegos C++\battlemonster-main\Debug\ExperimentoBattlelMonster.exe
